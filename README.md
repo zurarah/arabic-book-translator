@@ -107,8 +107,3 @@ Override or extend with `--glossary path/to/custom.json`:
 }
 ```
 
----
-
-## 📄 License
-
-MIT
