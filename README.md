@@ -27,7 +27,7 @@ pip install -r requirements.txt
 export GOOGLE_API_KEY="your-key-here"
 
 # Translate a book
-python -m translator book.pdf -o translated.md
+python3 -m translator book.pdf -o translated.md
 ```
 
 ---
@@ -35,7 +35,7 @@ python -m translator book.pdf -o translated.md
 ## 📋 Usage
 
 ```
-python -m translator <input> [options]
+python3 -m translator <input> [options]
 ```
 
 | Option | Description | Default |
@@ -54,19 +54,19 @@ python -m translator <input> [options]
 
 ```bash
 # Translate a PDF with Gemini (default)
-python -m translator kitab.pdf
+python3 -m translator kitab.pdf
 
 # Use OpenAI instead
-python -m translator risala.txt --provider openai --model gpt-4o
+python3 -m translator risala.txt --provider openai --model gpt-4o
 
 # Use Anthropic
-python -m translator book.docx --provider anthropic
+python3 -m translator book.docx --provider anthropic
 
 # Custom glossary + smaller chunks
-python -m translator book.pdf --glossary my_terms.json --chunk-size 1000
+python3 -m translator book.pdf --glossary my_terms.json --chunk-size 1000
 
 # Dry run (test without API calls)
-python -m translator book.pdf --dry-run
+python3 -m translator book.pdf --dry-run
 ```
 
 ---
